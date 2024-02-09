@@ -20,6 +20,6 @@ jobs:
           git config --global user.name "Ben Allen"
           git add README.md
           git commit -m "Update README"
-          git push
+          git push https://${{ secrets.GH_PAT}}@github.com/$GITHUB_REPOSITORY.git HEAD:main
 
 
