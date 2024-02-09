@@ -16,6 +16,8 @@ jobs:
       - name: Run script
         run: |
           ./updateReadme.sh
+          git config --global user.email "ben@benallen.dev"
+          git config --global user.name "Ben Allen"
           git add README.md
           git commit -m "Update README"
           git push
