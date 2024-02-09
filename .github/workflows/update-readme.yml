@@ -1,0 +1,23 @@
+name: Update README
+
+on:
+  schedule:
+    - cron: '0 9 * * *' # Run every day at 09:00 UTC
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Run script
+        run: |
+          ./updateReadme.sh
+          git add README.md
+          git commit -m "Update README"
+          git push
+
+
