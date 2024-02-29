@@ -2,7 +2,7 @@
 
 ## Important note
 
-Git activity graphs mean nothing, as this project hopefully proves. If you care about your graph's looks, just fork this, add a secret called "GT_PAT" that contains a Personal Access Token that can push and you're all set. Change the cronjob in the action to your liking and watch your commit history grow.
+Git activity graphs mean nothing, as this project hopefully proves. If you care about your graph's looks, just fork this, configure an access token and you're all set. Change the cronjob in the action to your liking and watch your commit history grow.
 
 If you think git contribution graphs are a measure of how good of an engineer you are, I'm not saying there's no correlation - lots of really talented folks have densely populated graphs. Just keep in mind that a full graph is a measure of volume, not quality.
 
